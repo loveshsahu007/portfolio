@@ -60,7 +60,7 @@ export default function ContactMe() {
             fontSize: "20px",
             fontWeight: "700",
             color: "#fff",
-            marginBottom:"10px",
+            marginBottom:"60px",
             backgroundColor:"#754ef9"
           }}
         >
