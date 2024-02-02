@@ -4,6 +4,10 @@ import React from "react";
 import arrow from "../../assets/up-arrow.png";
 
 export default function Footer() {
+  const handleScrollToHome = () => {
+    const scrollToAbout = document.getElementById("homepage");
+    scrollToAbout.scrollIntoView({ behavior: "smooth" });
+  };
   return (
     <Box
       sx={{
@@ -15,14 +19,21 @@ export default function Footer() {
         //marginRight: "5px",
       }}
     >
-      <Typography sx={{ color: "#FFF" ,marginLeft:"60px"}}>
+      <Typography sx={{ color: "#FFF", marginLeft: "60px" }}>
         Copyright © 2023 by Lovesh Sahu | All Rights Reserved
       </Typography>
-      <a href="http://localhost:5173/">
+      <a onClick={handleScrollToHome}>
         <img
           src={arrow}
-          style={{ width: "20px", marginBottom: "5px",color:"#FFF",borderRadius:"30%",backgroundColor:"#FFF" ,padding:"10px" }}
-          
+          style={{
+            width: "20px",
+            marginBottom: "5px",
+            color: "#FFF",
+            borderRadius: "30%",
+            backgroundColor: "#FFF",
+            padding: "10px",
+            marginRight: "60px",
+          }}
         />
       </a>
     </Box>

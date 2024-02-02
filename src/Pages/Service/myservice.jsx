@@ -39,7 +39,7 @@ export default function myservice() {
         />
         <Cards
           imageSrc={WWW}
-          title="Integrate third-Party"
+          title="Integrate Third-Party"
           description="I have seamlessly integrated several third-party services into my system, including Nodemailer for email functionality, Google Apps Script for automation, LinkedIn API for social connectivity, Twitter API for real-time updates, WebRTC for real-time communication, and Stripe for secure payment processing."
         />
         <Cards

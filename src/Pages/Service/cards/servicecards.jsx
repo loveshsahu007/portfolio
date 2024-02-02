@@ -22,10 +22,11 @@ export default function CustomCard({ imageSrc, title, description }) {
         backgroundColor: "#FFF",
         overflow: "auto",
         borderRadius: "28px",
-        border: "7px solid #754ef9", // Border for the sides with 5px width
-        borderLeft: "2px solid grey", // Border for the left side with 2px width and grey color
-        borderRight: "2px solid grey",
-        boxShadow: "0 0 30px rgba(0, 0, 0, 0.2)",
+        borderTop: "7px solid #754ef9 ", 
+        borderBottom: "7px solid #754ef9 ",// Border for the sides with 5px width
+        borderLeft: "none", // Border for the left side with 2px width and grey color
+        borderRight: "none",
+        boxShadow: "0 0 20px rgba(0, 0, 0, 0.2)",
         transition: "transform 0.3s ease-in-out", // Add smooth transition for hover effect
         "&:hover": {
           transform: "scale(1.15)", 

@@ -22,6 +22,10 @@ export default function Header() {
     const scrollToAbout = document.getElementById("homepage");
     scrollToAbout.scrollIntoView({ behavior: "smooth" });
   };
+  const handleScrollToMyWork = () => {
+    const scrollToAbout = document.getElementById("mywork");
+    scrollToAbout.scrollIntoView({ behavior: "smooth" });
+  };
 
   return (
     <Box
@@ -51,7 +55,7 @@ export default function Header() {
           gap: "30px",
           justifyContent: "space-between",
           alignItems: "center",
-          marginRight: "150px",
+          marginRight: "100px",
         }}
       >
         <a className="navlinks" onClick={handleScrollToHome}>
@@ -63,15 +67,30 @@ export default function Header() {
         <a className="navlinks" onClick={handleScrollToMyService}>
           SERVICE
         </a>
-
+        <a className="navlinks" onClick={handleScrollToMyWork}>
+          MY-WORK
+        </a>
         <a className="navlinks" onClick={handleScrollToContactMe}>
           CONTACT
         </a>
-        <Tooltip
+        {/* <Tooltip
           sx={{ zIndex: "10000", position: "relative" }}
           title="Switch to dark mode"
         >
           <Switch onChange={toggleDarkMode} />
+        </Tooltip> */}
+        <Tooltip
+          sx={{ zIndex: "10000", position: "relative" }}
+          title="Switch to dark mode"
+        >
+          <Box onChange={toggleDarkMode}>
+            <label class="ui-switch">
+              <input type="checkbox" />
+              <div class="slider">
+                <div class="circle"></div>
+              </div>
+            </label>
+          </Box>
         </Tooltip>
       </div>
     </Box>

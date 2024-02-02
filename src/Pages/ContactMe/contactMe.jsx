@@ -1,14 +1,15 @@
-import { Box } from "@mui/system";
+
 import React from "react";
 
 import Button from "@mui/joy/Button";
 import Textarea from '@mui/joy/Textarea'
 import Input from "@mui/joy/Input";
 import Stack from "@mui/joy/Stack";
-import { Typography } from "@mui/joy";
+import { Typography,Box } from "@mui/joy";
+import  "../ContactMe/contactme.css";
 
-export default function ContactMe() {
-
+export default function ContactMe() {  
+  console.log(navigator)
   return (
     <Box id="contactme"
       sx={{
@@ -48,7 +49,7 @@ export default function ContactMe() {
           </Box>
         </Stack>
         <Textarea minRows={7} sx={{margin:"20px 0px"}} placeholder="Your Message..."/>
-        <Button
+        {/* <Button className="uibutton"
           type="submit"
           sx={{
             display: "flex",
@@ -65,7 +66,8 @@ export default function ContactMe() {
           }}
         >
           Submit
-        </Button>
+        </Button> */}
+        <button type="submit">Submit</button>
       </Box>
     </Box>
   );

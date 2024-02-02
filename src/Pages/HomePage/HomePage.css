@@ -1,17 +1,49 @@
 @keyframes bounce {
-    0%, 20%, 50%, 80%, 100% {
-      transform: translateY(0);
-    }
-    40% {
-      transform: translateY(-10px);
-    }
-    60% {
-      transform: translateY(-5px);
-    }
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
   }
-  
-  .animated-text span {
-    display: inline-block;
-    animation: bounce 2s infinite;
+  40% {
+    transform: translateY(-10px);
   }
-  
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.animated-text span {
+  display: inline-block;
+  animation: bounce 2s infinite;
+}
+
+.social-icon:hover {
+  /* Add your desired hover styles here */
+  filter: brightness(1.2); /* Example: increase brightness on hover */
+}
+
+.insta {
+  transition: transform 0.2s ease-in-out;
+}
+
+.insta:hover {
+  transform: scale(1.2);
+}
+
+.linkedin {
+  transition: transform 0.2s ease-in-out;
+}
+
+.linkedin:hover {
+  transform: scale(1.2);
+}
+
+.github {
+  transition: transform 0.2s ease-in-out;
+}
+
+.github:hover {
+  transform: scale(1.2);
+}
